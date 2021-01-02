@@ -10,7 +10,8 @@ pipeline:
   - name: "components.lm_featurizer.LanguageModelFeaturizer"
     model_name: "bert"
     # model_weights: "bert-base-chinese"
-    model_weights: "./bert-models/chinese_wwm_ext_pytorch"
+    # model_weights: "./bert-models/chinese_wwm_ext_pytorch"
+    model_weights: hfl/chinese-bert-wwm-ext
     from_pt: true
     cache_dir: "./cache"
   - name: "RegexFeaturizer"

@@ -3,7 +3,7 @@ version: '3.7'
 services:
   rasa-chinese-service:
     # build: .
-    image: xanthoustech/rasa-chinese-service:latest
+    image: rasa-chinese-service:latest
     ports:
       - 8000:8000
     volumes:
