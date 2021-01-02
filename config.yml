@@ -1,14 +1,12 @@
 language: zh
 
 pipeline:
-  - name: "JiebaTokenizer"
-    # dictionary_path: "path/to/custom/dictionary/dir"
+  - name: "rasa_chinese.nlu.tokenizers.lm_tokenizer.LanguageModelTokenizer"
+    tokenizer_url: http://localhost:8000
     # Flag to check whether to split intents
     intent_tokenization_flag: false
     # Symbol on which intent should be split
     intent_split_symbol: "_"
-    # Regular expression to detect tokens
-    # "token_pattern": None
   - name: "components.lm_featurizer.LanguageModelFeaturizer"
     model_name: "bert"
     # model_weights: "bert-base-chinese"

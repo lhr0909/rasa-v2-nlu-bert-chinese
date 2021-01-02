@@ -9,6 +9,7 @@ python = ">=3.6,<3.9"
 rasa = {extras = ["transformers"], version = "^2.2.2"}
 transformers = {version = "2.11.0", extras = ["tf-cpu", "torch"]}
 jieba = "^0.42.1"
+rasa_chinese = "^2.2.0"
 
 [tool.poetry.dev-dependencies]
 

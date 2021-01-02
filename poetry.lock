@@ -1217,6 +1217,17 @@ transformers = ["transformers (>=2.4,<2.12)"]
 
 [[package]]
 category = "main"
+description = "A Chinese language extension package for Rasa"
+name = "rasa-chinese"
+optional = false
+python-versions = "*"
+version = "2.2.0"
+
+[package.dependencies]
+rasa = ">=2.2,<3.0"
+
+[[package]]
+category = "main"
 description = "Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
 name = "rasa-sdk"
 optional = false
@@ -2026,7 +2037,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [metadata]
-content-hash = "16dec4b06a6f53d719d13082c51de45ff6045022c46decfb84eb57c01a3a267f"
+content-hash = "9d30ba860cc0833e55fc113a93d0e8c6106ef43a6ce43389aee7694354ef3fb2"
 python-versions = ">=3.6,<3.9"
 
 [metadata.files]
@@ -2817,6 +2828,10 @@ questionary = [
 rasa = [
     {file = "rasa-2.2.2-py3-none-any.whl", hash = "sha256:14974924c34b07a142faeb484532fa9384caea8577b68450e67ce4075cb0baae"},
     {file = "rasa-2.2.2.tar.gz", hash = "sha256:ab9e94a23f0999b9973ffbd1b55b0e4f4c95c02db4942d2defb5cd668c8646b5"},
+]
+rasa-chinese = [
+    {file = "rasa_chinese-2.2.0-py2.py3-none-any.whl", hash = "sha256:5d758e725a05d1927bb425018a6ac52cedcd5780494f4996439531e318b7b908"},
+    {file = "rasa_chinese-2.2.0.tar.gz", hash = "sha256:6737dc99326c89f7178fa891ed7f63e23977b44fab7414b5b75dece8d67d39b8"},
 ]
 rasa-sdk = [
     {file = "rasa-sdk-2.2.0.tar.gz", hash = "sha256:03f4742e46929552a71d172459ea78a020c17dc965d8eeea8231f32b4bca3294"},
