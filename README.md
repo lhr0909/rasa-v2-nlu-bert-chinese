@@ -6,7 +6,7 @@ Rasa支持使用HuggingFace Transformers对接现成的语言模型，目测只�
 
 当前遇到的问题是 `LanguageModelTokenizer` 是deprecated状态，并且此tokenizer不支持设置 `language: zh` ，但是 `LanguageModelFeaturizer` 必须前置一个tokenizer。
 
-现阶段前置 `JiebaTokenizer` 能解决问题。
+当前使用的是[howl-anderson/rasa_chinese_service/lm_tokenizer](https://github.com/howl-anderson/rasa_chinese_service/pull/1)封装的一个HTTP服务作为Tokenizer。
 
 # `LanguageModelFeaturizer` 使用PyTorch模型
 
